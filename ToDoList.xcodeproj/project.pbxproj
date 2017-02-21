@@ -13,7 +13,7 @@
 		9BE8D7831E5B990D00AF32D6 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8D7811E5B990D00AF32D6 /* ToDoList.xcdatamodeld */; };
 		9BE8D7851E5B990D00AF32D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BE8D7841E5B990D00AF32D6 /* Assets.xcassets */; };
 		9BE8D7881E5B990D00AF32D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BE8D7861E5B990D00AF32D6 /* LaunchScreen.storyboard */; };
-		9BE8D7901E5B9C0900AF32D6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8D78F1E5B9C0900AF32D6 /* DetailViewController.swift */; };
+		9BE8D7941E5CB80200AF32D6 /* CustomTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8D7931E5CB80200AF32D6 /* CustomTableTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		9BE8D7841E5B990D00AF32D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BE8D7871E5B990D00AF32D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BE8D7891E5B990D00AF32D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BE8D78F1E5B9C0900AF32D6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9BE8D7931E5CB80200AF32D6 /* CustomTableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTableTableViewCell.swift; path = ../CustomTableTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +58,10 @@
 		9BE8D7791E5B990D00AF32D6 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				9BE8D7931E5CB80200AF32D6 /* CustomTableTableViewCell.swift */,
 				9BE8D77A1E5B990D00AF32D6 /* AppDelegate.swift */,
 				9BE8D77C1E5B990D00AF32D6 /* ViewController.swift */,
 				9BE8D77E1E5B990D00AF32D6 /* Main.storyboard */,
-				9BE8D78F1E5B9C0900AF32D6 /* DetailViewController.swift */,
 				9BE8D7841E5B990D00AF32D6 /* Assets.xcassets */,
 				9BE8D7861E5B990D00AF32D6 /* LaunchScreen.storyboard */,
 				9BE8D7891E5B990D00AF32D6 /* Info.plist */,
@@ -146,7 +146,7 @@
 				9BE8D77D1E5B990D00AF32D6 /* ViewController.swift in Sources */,
 				9BE8D7831E5B990D00AF32D6 /* ToDoList.xcdatamodeld in Sources */,
 				9BE8D77B1E5B990D00AF32D6 /* AppDelegate.swift in Sources */,
-				9BE8D7901E5B9C0900AF32D6 /* DetailViewController.swift in Sources */,
+				9BE8D7941E5CB80200AF32D6 /* CustomTableTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +310,7 @@
 				9BE8D78E1E5B990D00AF32D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

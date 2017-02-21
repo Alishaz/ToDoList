@@ -12,8 +12,8 @@ import CoreData
 class ViewController: UIViewController, UITableViewDataSource {
     
     var listItems = [NSManagedObject] ()
-
-    @IBOutlet weak var `switch`: UISwitch!
+   
+    
     
     @IBAction func btnEdit(_ sender: Any) {
     }
@@ -22,23 +22,23 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self, action: #selector(ViewController.addItem))
+      //  self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self, action: #selector(ViewController.addItem))
     }
     
-    func addItem(){
+    //func addItem(){
         
-        let alertController = UIAlertController(title: "Type Something" , message: "Type.. ", preferredStyle: UIAlertControllerStyle.alert)
+     //   let alertController = UIAlertController(title: "Type Something" , message: "Type.. ", preferredStyle: UIAlertControllerStyle.alert)
         
-        let confirmAction = UIAlertAction(title: "Type", style: UIAlertActionStyle.default, handler: ({
-            (_) in
+   //     let confirmAction = UIAlertAction(title: "Type", style: UIAlertActionStyle.default, handler: ({
+      //      (_) in
+   
+     //        let field = alertController.textFields![0] as? UITextField {
             
-             let field = alertController.textFields![0] as? UITextField {
             
+     //   }
             
-        }
-            
-        ))
-    }
+     //   ))
+  //  }
     
     func saveItem(itemToSave : String){
         
@@ -68,6 +68,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")! as UITableViewCell
         
+    //    cell.textLabel?.text=listItems[indexPath.row]
         return cell
     }
 }
