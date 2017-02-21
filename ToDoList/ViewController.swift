@@ -4,7 +4,7 @@
 //
 //  Created by rushabh on 20/02/17.
 //  Copyright © 2017 CentennialCollege. All rights reserved.
-//
+//  300912073 - Alisha Zaveri
 
 import UIKit
 import CoreData
@@ -40,6 +40,7 @@ class ViewController: UIViewController, UITableViewDataSource {
      //   ))
   //  }
     
+    // For saving task
     func saveItem(itemToSave : String){
         
         let appDelegate = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
@@ -50,7 +51,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         let item = NSManagedObject(entity: entity!, insertInto: managedContext)
      
         do{
-            try managedContext.save()
+            try managedContext.save()    // to save tasks
             listItems.append(item)
         }
         catch{
@@ -59,12 +60,16 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
         }
     
+    
+    // For list of task
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         
         return listItems.count
     }
     
+    
+    // Display tasks
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")! as UITableViewCell
         
